@@ -23,7 +23,6 @@ const Exercises = ({exercises,setExercises,bodyPart}) => {
       }else{
         exercisesData = await fetchData(OTHERURL,options)
       }
-      console.log('exercisesData',exercisesData)
       setExercises(exercisesData)
     }
     fetchExercisesData()
